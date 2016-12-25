@@ -22,14 +22,18 @@
 	
 	// 配置
 	$smarty->template_dir = './templates';
-	$smarty->compile_dir = './compile'; 
+	$smarty->compile_dir = './compile';
+	$smarty->config_dir = './conf'; 
 	
 	// assign 赋值
 	$smarty->assign('name', '罗隐');
 	$smarty->assign('poem', '我未成名君未嫁，可能俱是不如人');
 	
 	// 系统保留变量，不用赋值，能够自动获取
-		
+	define('HEI', 8846);	
+				
+	// 配置文件读取配置变量
+				
 				
 	// 编译
 	$smarty->display('shiju.html'); 
