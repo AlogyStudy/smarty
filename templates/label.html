@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+<style type="text/css">
+	/*{literal} table {background: pink;} {/literal}*/
+	{literal} table {background: pink;} {/literal}
+</style>
+		
+		<pre>
+			如果smarty默认定界符 `{}` 与   css `{}` 冲突
+			可以使用以下二种方法解决
+			1. 修改smarty默认定界符`{{}}`
+			2. `{literal}` 标签 
+		</pre>
+		
+		<table style="border: 1px solid lightcyan;">
+			<tr>
+				<td>姓名：</td>
+				<td>{$name}</td>
+			</tr>
+			<tr>
+				<td>年龄</td>
+				<td>{$age}</td>
+			</tr>
+			<tr>
+				<td>兵器</td>
+				<td>{$weapon}</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
