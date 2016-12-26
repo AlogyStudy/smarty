@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<h2>商品栏目</h2>
+		<table border="1">
+			<tr>
+				<td>序号</td>
+				<td>栏目名</td>
+				<td>栏目信息</td>
+			</tr>
+			
+			{foreach $category as $k=>$g}
+			<tr {if $g@iteration % 2 == 0} bgcolor="burlywood" {/if} {if $g@first == 1} bgcolor="gray" {/if}>
+				<td>{$g@iteration}</td>
+				<td>{$g.cat_name}</td>	
+				<td>{$g.intro}</td>
+			</tr>
+			{/foreach}
+		</table>
+		
+		<div>索引：$g@iteration</div>
+		<div>首行：$g@first</div>
+		<div>尾行：$g@last</div>
+		<div>总条数：{$g@total}</div>
+		
+	</body>
+</html>

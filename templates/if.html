@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<div>{$price}</div>
+		
+		{if $price < 10000 }
+			<div>{$color}</div>
+		{else}
+			<div>TAN</div>
+		{/if}
+		
+		{if $smarty.get.today == 0 || $smarty.get.today == 7} 
+			<div>周日</div>
+		{elseif $smarty.get.today == 6}
+			<div>周六</div>
+		{else}
+			<div>工作日</div>
+		{/if}
+		
+	</body>
+</html>

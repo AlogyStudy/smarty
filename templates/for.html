@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		
+		{for $i = $start to $end}
+			{$i}
+			{if $i % 3 == 0}
+				<br/>
+			{/if}
+		{/for}
+		
+		<hr />
+		<h3>1-100所有的奇数</h3>
+		{for $i=$start to 100}
+			{if $i % 2 != 0 }
+				<span>{$i}</span>
+			{/if}
+		{/for}
+			
+		<h3>步长属性 控制</h3>	
+		<div>
+			{for $i=$start to 100 step 2}
+				{if $i@first == $start}
+					<span style="color: cyan;">{$i}</span>
+				{elseif $i@last == $i@total}
+					<span style="color: tan;">{$i}</span>
+				{else}	
+					{$i}
+				{/if}
+				{if $i@iteration % 3 == 0}
+					<br/>
+				{/if}
+			{/for}
+			<div>
+				循环总次数：{$i@total}
+			</div>
+			<div>
+				循环索引：$i@iteration
+			</div>
+			<div>
+				循环的第一次：$i@first
+			</div>
+			<div>
+				循环的最后一次：$i@last
+			</div>
+		</div>	
+		
+	</body>
+</html>
