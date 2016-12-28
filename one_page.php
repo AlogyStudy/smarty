@@ -12,6 +12,10 @@
 	 * smarty缓存的用法
 	 */
 	
+	// 出于调试目的，临时不缓存文件
+	$smarty->force_cache = true; // 强迫文件不缓存
+	
+	
 	// 开启缓存 
 	$smarty->caching = true;
 	
@@ -61,7 +65,7 @@ if ( !$smarty->isCached('one_page.html', $goods_id) ) {
 	
 	// 赋值	
 	$smarty->assign($goods);
-	
+	echo '数据库';
 }	
 
 	// 编译	

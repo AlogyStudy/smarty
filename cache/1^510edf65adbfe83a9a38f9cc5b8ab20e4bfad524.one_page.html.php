@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-12-26 14:31:35
+/* Smarty version 3.1.30, created on 2016-12-26 14:31:32
   from "E:\wamp\www\github\smarty\templates\one_page.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_586129c7a68eb8_80634171',
+  'unifunc' => 'content_586129c492b2d6_34732006',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 10,
 ),true)) {
-function content_586129c7a68eb8_80634171 (Smarty_Internal_Template $_smarty_tpl) {
+function content_586129c492b2d6_34732006 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,8 +28,8 @@ function content_586129c7a68eb8_80634171 (Smarty_Internal_Template $_smarty_tpl)
 	</head>
 	<body>
 		
-		<h2>两扣平驳领棕色格纹男士休闲单西D6959</h2>
-		<p>1490.00</p>
+		<h2>两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶</h2>
+		<p>799.00</p>
 		<p></p>
 		
 	</body>
